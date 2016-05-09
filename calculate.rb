@@ -1,7 +1,5 @@
 # -*- coding: utf-8 -*-
 
-require "./search_idle.rb"
-
 module IdleManage
   class Calculate
     def initialize(idles)

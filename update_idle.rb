@@ -4,19 +4,7 @@
 
 require 'open-uri'
 require 'nokogiri'
-
-module IdleManage
-  require "sqlite3"
-  require "active_record"
-
-  ActiveRecord::Base.establish_connection(
-    "adapter" => "sqlite3",
-    "database" => "./idle.db"
-  )
-
-  class Idle < ActiveRecord::Base
-  end
-end
+require './idle.rb'
 
 # SSR更新
 url = 'http://imascg-slstage-wiki.gamerch.com/SSR'

@@ -37,10 +37,9 @@ db = SQLite3::Database.new("center.db")
 
 # センター効果DB作成
 sql = <<SQL
-CREATE TABLE center_skills (
+CREATE TABLE centers (
   id         integer   PRIMARY KEY,
   name       text      NOT NULL,
-  idle_type  text      NOT NULL,
   skill_name text      NOT NULL,
   status_up  text      NOT NULL,
   persentage integer   NOT NULL
